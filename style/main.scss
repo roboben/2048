@@ -344,17 +344,17 @@ hr {
                    #89a9d7 true, // 1024
                    #c76d5c true; // 2048
 
-   $tile-pokemon:  url('../im/weedle.png'), // 2
-                   url('../im/pidgey.png'), // 4
-                   url('../im/zubat.png'), // 8
-                   url('../im/magikarp.png'), // 16
-                   url('../im/psyduck.png'), // 32
-                   url('../im/ninetales.png'), // 64
-                   url('../im/snorlax.png'), // 128
-                   url('../im/pikachu.png'), // 256
-                   url('../im/venasaur.png'), // 512
-                   url('../im/blastoise.png'), // 1024
-                   url('../im/charizard.png'); // 2048
+   $tile-robots:  url('../im/pathfinder.png'), // 2
+                   url('../im/spirit.png'), // 4
+                   url('../im/opportunity.png'), // 8
+                   url('../im/both.png'), // 16
+                   url('../im/curiosity.png'), // 32
+                   url('../im/robonaut.png'), // 64
+                   url('../im/robonautrover.png'), // 128
+                   url('../im/spidernaut.png'), // 256
+                   url('../im/lunar.png'), // 512
+                   url('../im/athlete.png'), // 1024
+                   url('../im/athletebigsmall.png'); // 2048
 
   // Build tile colors
   @while $exponent <= $limit {
@@ -371,7 +371,7 @@ hr {
 
       // Set background
       background: $tile-color;
-      background-image: nth($tile-pokemon, $exponent);
+      background-image: nth($tile-robots, $exponent);
       background-size: 80% 80%;
       background-repeat: no-repeat;
       background-position: center;
